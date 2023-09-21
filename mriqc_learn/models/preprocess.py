@@ -317,6 +317,7 @@ class SiteCorrelationSelector(_FeatureSelection):
         max_iter=None,
         max_remove=0.7,
         site_col="site",
+        drop=None,
     ):
         self.ignore = [site_col]
         self.disable = disable
@@ -326,6 +327,7 @@ class SiteCorrelationSelector(_FeatureSelection):
         self.max_remove = max_remove if max_remove > 0 else None
         self.max_iter = max_iter
         self.site_col = site_col
+        self.drop = drop
 
     def fit(self, X, y, n_jobs=None):
         """Fit the model with X.
