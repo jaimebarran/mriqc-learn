@@ -239,7 +239,7 @@ class NoiseWinnowFeatSelect(_FeatureSelection):
 
         counter = 1
         noise_flag = True
-        while noise_flag:
+        while noise_flag:#
             # Drop masked features
             X = X_input.drop(self.drop, axis=1)
             # Add noise feature

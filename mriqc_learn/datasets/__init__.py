@@ -37,7 +37,7 @@ def load_dataset(
     site=None,
 ):
     """Load default datasets."""
-    if dataset not in ("abide", "ds030"):
+    if dataset not in ("abide", "ds030","SHIP183"):
         raise ValueError(f"Unknown dataset <{dataset}>.")
 
     return load_data(
