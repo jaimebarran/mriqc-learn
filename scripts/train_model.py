@@ -59,7 +59,7 @@ def main():
         y=merged_y,
         **fit_params,
     )
-    dump(model, "classifier.joblib")
+    dump(model, "classifier2.joblib")
 
 
 if __name__ == "__main__":
