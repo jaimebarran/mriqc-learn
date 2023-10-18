@@ -59,7 +59,7 @@ def main():
         y=merged_y,
         **fit_params,
     )
-    dump(model, "classifier2.joblib")
+    dump(model, "/mnt/sda1/Repos/mriqc/mriqc-learn/mriqc-learn/mriqc_learn/data/classifier_no_brain_iqms.joblib")
 
 
 if __name__ == "__main__":
